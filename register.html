@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+         table {
+        border: 1px solid #000;
+        margin: auto; /* Table ko center me laane ke liye*/
+        /* width: 900px; */
+      }
+
+      th{
+        border: 1px solid #000; /* Border dono th ke liye */
+        padding-left: 20px; 
+        padding-right: 20px;
+      }
+    </style>
+</head>
+<body>
+     <!-- Our Header Section Start -->
+     <header>
+        <nav>
+          <table>
+            <tr>
+              <th>
+                <a href="index.html"><img
+                  src="./assets/syalaniLogo.png"
+                  alt="Sylani Logo"
+                  width="100px"
+              /></a>
+              </th>
+              <th><a href="index.html">Home</a></th>
+              <th><a href="about.html">About</a></th>
+              <th><a href="gallery.html">Gallery</a></th>
+              <th><a href="media.html">Media</a></th>
+              <th><a href="contact.html">Contact</a></th>
+              <th><a href="login.html">Login</a></th>
+              <th><a href="register.html">Register</a></th>
+            </tr>
+          </table>
+        </nav>
+      </header> <!--Header Section End-->
+  
+      <hr>
+
+    <!-- Main Section Start  -->
+     <main>
+
+        <!-- Registration Page section Start  -->
+         <section style="text-align: center;">
+          <h1>Register page</h1>
+         </section> <!-- Login Page section Start  -->
+
+         <hr>
+
+         <!-- Register to continue Section Start  -->
+         <section style="text-align: center;">
+            <h3>Please register to continue</h3>
+            <p>All the fields are required.</p>
+        </section> <!-- Login to continue Section End  -->
+        
+        <hr>
+ 
+         <!-- Form Section Start  -->
+         <section style="text-align: center;">
+                <fieldset style="display: inline-block; text-align: left;">
+                    <legend>Register</legend>
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="full_name">
+                    <br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Email" name="email">
+                    <br><br>
+            
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <br><br>
+
+                    <label for="gender">Gender:</label><br> <!-- Gender ka label -->
+                    <label for="male">Male</label>  <!-- Male option ka label -->
+                    <input type="radio" name="gender" id="male"> <!-- Male option ka radio button -->
+                    
+                    <label for="female">Female</label> <!-- Female option ka label -->
+                    <input type="radio" name="gender" id="female"> <!-- Female option ka radio button -->
+                    <br><br>
+
+                  <!-- Hobbies section start -->
+                  <label for="hobbies">Hobbies:</label><br>
+
+<!-- Music checkbox -->
+<label for="music">Music:</label>
+<input type="checkbox" name="hobby" id="music">
+
+<!-- Art checkbox -->
+<label for="art">Art:</label>
+<input type="checkbox" name="hobby" id="art">
+
+<!-- Painting checkbox -->
+<label for="painting">Painting:</label>
+<input type="checkbox" name="hobby" id="painting">
+<!-- Hobbies section end -->
+                    
+                    <br><br>
+
+                    <label for="country">Country:</label><br>
+                    <select name="country" id="country" size="3" multiple >
+                        <option value="pakistan">Pakistan</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                    </select>
+
+                    <!-- size attribute: -->
+                    <!-- Is se aap specify karte hain kitne options ek waqt me visible hone chahiye. -->
+                    <!-- Example: size="4" se 4 options ek waqt me dikhayi denge. -->
+ 
+                    <!-- multiple attribute: -->
+                    <!-- Iska use karte hain jab aap ek se zyada options select karne ki permission dena chahte hain. -->
+                    <!-- Agar yeh attribute present hai, user multiple options select kar sakta hai. -->
+
+
+                    <br><br>
+
+                    <label for="dob">DOB:</label><br>
+                    <input type="date" name="sate" id="dob">
+                    <br><br>
+
+                    <label for="upload">Upload your photo:</label><br>
+                    <input type="file" name="file-name" id="upload">
+                    <br><br>
+
+                    <input type="submit" value="Register">
+                    <br><br>
+
+                    
+
+                    <a href="login.html">Already a user?</a>
+                </fieldset>
+           
+        </section>
+        
+
+        <!-- <table width="100%" height="100%">
+            <tr>
+                <td align="center" valign="middle">
+                    <form>
+                        <fieldset style="width: 300px; border-width: 2px;">
+                            <legend>Login</legend>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Password"><br><br>
+                            
+                            <button type="submit">Login</button><br><br>
+                            <a href="#">Not a user?</a>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table> -->
+    
+        
+
+     </main> <!-- Main Section Start  -->
+
+     <hr>
+
+     <footer style="text-align: center;">
+        <section>
+            <p>Copyright &copy; 2022. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

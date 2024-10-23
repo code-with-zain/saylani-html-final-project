@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+         table {
+        border: 1px solid #000;
+        margin: auto; /* Table ko center me laane ke liye*/
+        /* width: 900px; */
+      }
+
+      th{
+        border: 1px solid #000; /* Border dono th ke liye */
+        padding-left: 20px; 
+        padding-right: 20px;
+      }
+    </style>
+</head>
+<body>
+     <!-- Our Header Section Start -->
+     <header>
+        <nav>
+          <table>
+            <tr>
+              <th>
+                <a href="index.html"><img
+                  src="./assets/syalaniLogo.png"
+                  alt="Sylani Logo"
+                  width="100px"
+              /></a>
+              </th>
+              <th><a href="index.html">Home</a></th>
+              <th><a href="about.html">About</a></th>
+              <th><a href="gallery.html">Gallery</a></th>
+              <th><a href="media.html">Media</a></th>
+              <th><a href="contact.html">Contact</a></th>
+              <th><a href="login.html">Login</a></th>
+              <th><a href="register.html">Register</a></th>
+            </tr>
+          </table>
+        </nav>
+      </header> <!--Header Section End-->
+  
+      <hr>
+
+    <!-- Main Section Start  -->
+     <main>
+
+        <!-- Login Page section Start  -->
+         <section style="text-align: center;">
+          <h1>Login page</h1>
+         </section> <!-- Login Page section Start  -->
+
+         <hr>
+
+         <!-- Login to continue Section Start  -->
+         <section style="text-align: center;">
+            <h3>Please login to continue</h3>
+        </section> <!-- Login to continue Section End  -->
+        
+        <hr>
+ 
+         <!-- Form Section Start  -->
+         <section style="text-align: center;">
+                <fieldset style="display: inline-block; text-align: left;">
+                    <legend>Login</legend>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" placeholder="Email" name="email">
+                    <br><br>
+            
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <br><br>
+                    
+                    <input type="submit" value="login">
+                    <br><br>
+                    <a href="register.html">Not a user?</a>
+                </fieldset>
+        </section>
+
+        <!--? Why use inline-block  -->
+        <!--Answer: Agar aap fieldset ko inline-block dete hain, to ye uska size uske content ke hisaab se adjust karta hai (jitni jagah usme hai, utni hi space le), lekin wo puri width nahi le raha jese block elements karte hain. Is tarah aap fieldset ko center align kar sakte hain using text-align: center from its parent container.
+        Yeh is wajah se helpful hai jab aap form ya choti choti cheezein center me rakhna chahte ho, bina unhe 100% width ke saath rakhne ke.  -->
+
+        <!-- <table width="100%" height="100%">
+            <tr>
+                <td align="center" valign="middle">
+                    <form>
+                        <fieldset style="width: 300px; border-width: 2px;">
+                            <legend>Login</legend>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                            
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Password"><br><br>
+                            
+                            <button type="submit">Login</button><br><br>
+                            <a href="#">Not a user?</a>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table> -->
+    
+        
+
+     </main> <!-- Main Section Start  -->
+
+     <hr>
+
+     <footer style="text-align: center;">
+        <section>
+            <p>Copyright &copy; 2022. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>
