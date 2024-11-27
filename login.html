@@ -41,13 +41,19 @@
             </tr>
           </table>
         </nav>
-      </header> <!--Header Section End-->
-  
-      <hr>
+      </header><hr>
+      <!--Header Section End-->
 
     <!-- Main Section Start  -->
-     <main>
-
+     <main style="min-height: calc(100vh - (78px + 70px));">
+       
+      <!-- Yeh line `main` element ki minimum height ko set kar rahi hai. 
+      `100vh` ka matlab hai viewport ki total height (screen height).
+      Is height se header (78px) aur footer (70px) ki height ko minus kiya ja raha hai 
+      taake main content ki height puri screen ki height ke hisaab se adjust ho sake. 
+      Is se ensure hota hai ke footer hamesha page ke end par ho aur content beech me aaye.
+       -->
+      
         <!-- Login Page section Start  -->
          <section style="text-align: center;">
           <h1>Login page</h1>

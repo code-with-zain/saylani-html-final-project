@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media</title>
+    <title>Contact</title>
     <style>
          table {
         border: 1px solid #000;
@@ -15,7 +15,20 @@
         padding-left: 20px; 
         padding-right: 20px;
       }
+
+      main{
+        min-height: calc(100vh - 150px);
+        /* calc(100vh - 150px) = 650px. */
+      }
+
+     
     </style>
+    <!--? What is Min-height, Max-height and height  
+    min-height define karta hai ki kisi element ki minimum height kitni ho sakti hai. Agar content ki height us defined value se kam ho, to element ki height forcefully barh jayegi. Lekin agar content ki height zyada ho, to element apni natural height le lega.
+    
+    max-height define karta hai ki kisi element ki maximum height kitni ho sakti hai. Agar content ki height us defined value se kam ho, to wo apne actual size me rahega. Agar content us value se zyada expand karega, to height limit (maximum) par ruk jayegi.
+    
+    Hur Height me height fix hujae gi -->
 </head>
 <body>
      <!-- Our Header Section Start -->
@@ -27,8 +40,14 @@
                 <a href="index.html"><img
                   src="./assets/syalaniLogo.png"
                   alt="Sylani Logo"
-                  width="100px"
+                  style="max-width: 100px; min-width: 100px; width: 100%;"
               /></a>
+
+              <!--Combined Working
+                  width: 100%; image ko parent container ke mutabiq responsive banata hai.
+                  min-width aur max-width boundaries define karte hain:
+                  Image ki width 100px se kam nahi hogi. 
+                  Aur image ki width 150px se zyada nahi hogi. -->
               </th>
               <th><a href="index.html">Home</a></th>
               <th><a href="about.html">About</a></th>
@@ -64,6 +83,7 @@
  
          <!-- Form Section Start  -->
          <section style="text-align: center;">
+           <form>
             <label for="name">Name *:</label>
             <input type="text" id="name" placeholder="Full Name *">
 
@@ -84,6 +104,7 @@
             <br><br>
 
            <input type="submit" value="send message">
+           </form>
 
         </section>  <!-- form Section End  -->
 
